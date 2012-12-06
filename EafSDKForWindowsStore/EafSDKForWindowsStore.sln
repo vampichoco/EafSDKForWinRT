@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EafSDKForWindowsStore", "EafSDKForWindowsStore\EafSDKForWindowsStore.vbproj", "{0232C665-DA00-4104-A027-5C5AF2FD8A6D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "wpfTestApp", "wpfTestApp\wpfTestApp.vbproj", "{0D2B3964-0D22-4311-A295-FEA682F2700D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0232C665-DA00-4104-A027-5C5AF2FD8A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0232C665-DA00-4104-A027-5C5AF2FD8A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0232C665-DA00-4104-A027-5C5AF2FD8A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0232C665-DA00-4104-A027-5C5AF2FD8A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2B3964-0D22-4311-A295-FEA682F2700D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2B3964-0D22-4311-A295-FEA682F2700D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2B3964-0D22-4311-A295-FEA682F2700D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2B3964-0D22-4311-A295-FEA682F2700D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
