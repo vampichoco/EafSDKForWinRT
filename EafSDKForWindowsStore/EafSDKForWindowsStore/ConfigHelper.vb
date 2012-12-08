@@ -1,7 +1,7 @@
 ﻿Public Class ConfigHelper
     Public Shared ReadOnly Property ApiUrl As String
         Get
-            Return "http://127.0.0.1:81"
+            Return "http://www.elasticframework.com"
         End Get
     End Property
 End Class
