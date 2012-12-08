@@ -5,6 +5,7 @@
         Private _fileUrl As Uri
         Private _fileSize As Long
         Private _author As String
+        Private _metadata As Dictionary(Of String, String)
 
         Public Property Directory As String
             Get
@@ -50,6 +51,16 @@
                 _author = value
             End Set
         End Property
+
+        Public ReadOnly Property Metadata As Dictionary(Of String, String)
+            Get
+                Return _metadata
+            End Get
+        End Property
+
+        Public Sub New()
+            _metadata = New Dictionary(Of String, String)
+        End Sub
 
     End Class
 End Namespace

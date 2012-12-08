@@ -41,6 +41,8 @@
             End Set
         End Property
 
+        
+
         Public Shadows Function ToString() As String
             Return String.Format("Author: {0}, TicketID: {1}, ExpirationDate: {2}, BlobUri: {3}",
                                  Me.Author, Me.TicketId, Me.ExpirationDate.ToString, Me.BlobUri)

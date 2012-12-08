@@ -5,7 +5,7 @@
 
         'Visit www.elasticframework.com to get AppID And AppKey
 
-        Dim App As New EafSDKForWindowsStore.Model.eafApp(Guid.Parse("AppID"), "AppKey")
+        Dim App As New EafSDKForWindowsStore.Model.eafApp(Guid.Parse("db9e6bb5-c269-48e4-ac0a-13d0ac9c90e5"), "pwIBND0/kJr6aBT6Kxd3zHUI8mpwFCZe1x+eBL5DsIk=")
 
         Try
             Dim authRes As EafSDKForWindowsStore.Client.Auth.AuthResult =

@@ -35,8 +35,15 @@ Namespace Client
                      .BlobUri = resData.<Result>.<BlobUri>.Value
                     }
 
+                
+
                 Dim expDate As String = resData.<Result>.<ExpirationDate>.Value
-                Ticket.ExpirationDate = DateTime.Parse(expDate)
+                Try
+                    Ticket.ExpirationDate = DateTime.Parse(expDate)
+
+                Catch ex As Exception
+                End Try
+
 
                 Return New CreateTicketResult With {.Error = "", .Result = Ticket}
             Else
@@ -78,6 +85,10 @@ Namespace Client
                      .FileSize = Convert.ToInt64(resData.<Result>.<FileSize>.Value),
                      .FileUrl = New Uri(resData.<Result>.<FileUrl>.Value)
                     }
+
+                For Each item As XElement In resData.<Result>.<Metadata>...<Object>
+                    file.Metadata.Add(item.@Key, item.Value)
+                Next
 
                 Return New InstanceFileResult With {.Error = "", .Result = file}
             Else
